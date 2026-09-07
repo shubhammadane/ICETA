@@ -5,7 +5,7 @@ import CommitteeCard from '../components/CommitteeCard';
 import { conferenceData } from '../data/conferenceData';
 
 export default function Committee() {
-  const { committee } = conferenceData;
+  const { committee, organizingCommittees, patrons, coordinators } = conferenceData;
   const generalChair = committee.leadership.find((m) => m.role === 'General Chair');
   const organizingChairs = committee.leadership.filter((m) => m.role !== 'General Chair');
 
@@ -56,6 +56,42 @@ export default function Committee() {
           </div>
         </div>
 
+        {/* Patrons */}
+        {patrons && patrons.length > 0 && (
+          <div className="mb-14">
+            <div className="flex items-center gap-2 mb-6">
+              <Award className="w-5 h-5 text-sky-600" />
+              <h3 className="text-xl font-bold text-slate-900 tracking-tight">
+                Patrons
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {patrons.map((patron) => (
+                <CommitteeCard key={patron.id} {...patron} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Coordinator */}
+        {coordinators && coordinators.length > 0 && (
+          <div className="mb-14">
+            <div className="flex items-center gap-2 mb-6">
+              <Award className="w-5 h-5 text-sky-600" />
+              <h3 className="text-xl font-bold text-slate-900 tracking-tight">
+                Coordinator
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {coordinators.map((coordinator) => (
+                <CommitteeCard key={coordinator.id} {...coordinator} />
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* General Chair Spotlight */}
         <div className="mb-14">
           <div className="flex items-center gap-2 mb-6">
@@ -72,19 +108,146 @@ export default function Committee() {
           )}
         </div>
 
+        {/* Organizing Committees */}
+        <div className="space-y-12 mb-14">
+          <div className="border-b border-slate-200 pb-4">
+            <div className="flex items-center gap-2 mb-1">
+              <Users className="w-5 h-5 text-sky-600" />
+              <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
+                Organizing Committees
+              </h2>
+            </div>
+            <p className="text-xs sm:text-sm text-slate-500">
+              Departmental faculty and academic committees steering conference tracks, technical sessions, and academic peer review.
+            </p>
+          </div>
+
+          {/* CSE Department */}
+          <div className="space-y-6">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-200">
+              <div className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-lg bg-navy-900 text-sky-400 font-bold text-xs flex items-center justify-center border border-navy-800">
+                  CSE
+                </span>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+                    CSE Department
+                  </h3>
+                  <p className="text-xs text-slate-500">
+                    Department of Computer Science and Engineering
+                  </p>
+                </div>
+              </div>
+              <span className="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200">
+                {organizingCommittees.cse.length} Members
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {organizingCommittees.cse.map((member) => (
+                <CommitteeCard key={member.id} {...member} />
+              ))}
+            </div>
+          </div>
+
+          {/* IT Department */}
+          <div className="space-y-6">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-200">
+              <div className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-lg bg-navy-900 text-sky-400 font-bold text-xs flex items-center justify-center border border-navy-800">
+                  IT
+                </span>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+                    IT Department
+                  </h3>
+                  <p className="text-xs text-slate-500">
+                    Department of Information Technology
+                  </p>
+                </div>
+              </div>
+              <span className="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200">
+                {organizingCommittees.it.length} Members
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {organizingCommittees.it.map((member) => (
+                <CommitteeCard key={member.id} {...member} />
+              ))}
+            </div>
+          </div>
+
+          {/* MCA Department */}
+          <div className="space-y-6">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-200">
+              <div className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-lg bg-navy-900 text-sky-400 font-bold text-xs flex items-center justify-center border border-navy-800">
+                  MCA
+                </span>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+                    MCA Department
+                  </h3>
+                  <p className="text-xs text-slate-500">
+                    Department of Master of Computer Applications
+                  </p>
+                </div>
+              </div>
+              <span className="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200">
+                {organizingCommittees.mca.length} Members
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {organizingCommittees.mca.map((member) => (
+                <CommitteeCard key={member.id} {...member} />
+              ))}
+            </div>
+          </div>
+
+          {/* Visiting Faculty */}
+          <div className="space-y-6">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-200">
+              <div className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-lg bg-navy-900 text-sky-400 font-bold text-xs flex items-center justify-center border border-navy-800">
+                  VF
+                </span>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+                    Visiting Faculty
+                  </h3>
+                  <p className="text-xs text-slate-500">
+                    Visiting and Adjunct Academic Faculty
+                  </p>
+                </div>
+              </div>
+              <span className="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200">
+                {organizingCommittees.visitingFaculty.length} Members
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {organizingCommittees.visitingFaculty.map((member) => (
+                <CommitteeCard key={member.id} {...member} />
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Organizing Chairs & Functional Committees */}
         <div className="space-y-6">
           <div className="flex items-center justify-between pb-3 border-b border-slate-200">
             <div>
               <h3 className="text-xl font-bold text-slate-900 tracking-tight">
-                Organizing & Program Chairs
+                Program Chairs & Academic Functional Committees
               </h3>
               <p className="text-xs text-slate-500 mt-0.5">
                 Functional committees responsible for editorial oversight, peer review, and logistics.
               </p>
             </div>
             <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md">
-              Official Academic Panel
+              To be Announced
             </span>
           </div>
 

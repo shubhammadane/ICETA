@@ -1,4 +1,34 @@
 import drVikulJPawar from '../assets/images/committee/dr-vikul-j-pawar.jpg';
+import shriBVenugopalReddy from '../assets/images/committee/shri-b-venugopal-reddy.png';
+import drPramodNaik from '../assets/images/committee/dr-pramod-naik.png';
+import drSanjayDambhare from '../assets/images/committee/dr-sanjay-dambhare.png';
+import drAWBhade from '../assets/images/committee/dr-a-w-bhade.png';
+import drSmitaChavan from '../assets/images/committee/dr-smita-chavan-rathod.png';
+import drPardeshiSuraj from '../assets/images/committee/dr-pardeshi-suraj-rameshsingh.jpg';
+import profVAChakkarwar from '../assets/images/committee/prof-v-a-chakkarwar.jpg';
+import drShilpaKabra from '../assets/images/committee/dr-shilpa-m-kabra.png';
+import drKishorWagh from '../assets/images/committee/dr-kishor-prakash-wagh.png';
+import drNMMule from '../assets/images/committee/dr-n-m-mule.jpg';
+import drGulveAvinash from '../assets/images/committee/dr-gulve-avinash-khushal.png';
+import drPraveenShetiye from '../assets/images/committee/dr-praveen-shetiye.png';
+import drSapkalShubhangi from '../assets/images/committee/dr-sapkal-shubhangi-deorao.png';
+import profShubhamMadane from '../assets/images/committee/prof-shubham-s-madane.jpg';
+import profVaibhavMokale from '../assets/images/committee/prof-vaibhav-m-mokale.png';
+import mrRahulMannade from '../assets/images/committee/mr-rahul-b-mannade.png';
+import profAdityaSharma from '../assets/images/committee/prof-aditya-sharma.jpg';
+
+// Vite eager glob to automatically map verified committee & patron photos when files are present
+const committeeImages = import.meta.glob('../assets/images/committee/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
+
+// Patron photo mappings (src/assets/images/committee/)
+const patronPhoto1 = shriBVenugopalReddy;
+const patronPhoto2 = drPramodNaik;
+const patronPhoto3 = drSanjayDambhare;
+
+// Coordinator photo mappings (src/assets/images/committee/)
+const vikulPhoto = drVikulJPawar;
+const smitaPhoto = drSmitaChavan;
+const pardeshiPhoto = drPardeshiSuraj;
 
 /**
  * CENTRALIZED CONFERENCE CONFIGURATION
@@ -322,6 +352,7 @@ export const conferenceData = {
         role: "General Chair",
         name: "Dr. Vikul J. Pawar",
         designation: "Head, Department of Computer Science and Engineering",
+        qualification: "M.E (CSE), Ph.D (CSE)",
         department: "Department of Computer Science and Engineering",
         institution: "Government College of Engineering, Chhatrapati Sambhajinagar",
         country: "India",
@@ -398,6 +429,201 @@ export const conferenceData = {
     ],
     advisoryNotice: "International Advisory Committee — To Be Announced",
     advisoryMembers: [] // Configurable: when verified, add members here
+  },
+
+  // Conference Patrons
+  patrons: [
+    {
+      id: "patron-1",
+      name: "Shri B. Venugopal Reddy, IAS",
+      designation: "Patron",
+      role: "Add. Chief Secretary, H&TE, Mantralaya, Mumbai",
+      position: "Add. Chief Secretary, H&TE, Mantralaya, Mumbai",
+      image: patronPhoto1
+    },
+    {
+      id: "patron-2",
+      name: "Dr. Pramod Naik",
+      designation: "Patron",
+      role: "I/C Director of Technical Education (DTE), Mumbai",
+      position: "I/C Director of Technical Education (DTE), Mumbai",
+      image: patronPhoto2
+    },
+    {
+      id: "patron-3",
+      name: "Dr. Sanjay Dambhare",
+      designation: "Patron",
+      role: "Principal, Govt. College of Engineering Aurangabad, Chh. Sambhajinagar",
+      position: "Principal, Govt. College of Engineering Aurangabad, Chh. Sambhajinagar",
+      image: patronPhoto3
+    }
+  ],
+
+  // Conference Coordinators
+  coordinators: [
+    {
+      id: "coordinator-1",
+      name: "Dr. Vikul J. Pawar",
+      designation: "Head, Department of Computer Science and Engineering",
+      qualification: "M.E (CSE), Ph.D (CSE)",
+      department: "Department of Computer Science and Engineering",
+      image: vikulPhoto
+    },
+    {
+      id: "coordinator-2",
+      name: "Dr. Smita Chavan (Rathod)",
+      designation: "Head and Assistant Professor",
+      qualification: "Ph.D",
+      department: "Department of Information Technology",
+      image: smitaPhoto
+    },
+    {
+      id: "coordinator-3",
+      name: "Dr. Pardeshi Suraj Rameshsingh",
+      designation: "Assistant Professor",
+      department: "Department of MCA",
+      qualification: "Ph. D. (Computer Science)",
+      image: pardeshiPhoto,
+      departmentFirst: true
+    }
+  ],
+
+  // Organizing Committees (Department-Wise & Visiting Faculty)
+  organizingCommittees: {
+    cse: [
+      {
+        id: "cse-1",
+        name: "Dr. Vikul J. Pawar",
+        designation: "HOD, Assistant Professor",
+        qualification: "M.E (CSE), Ph.D (CSE)",
+        image: drVikulJPawar
+      },
+      {
+        id: "cse-2",
+        name: "Prof. V.A. Chakkarwar",
+        designation: "Assistant Professor",
+        qualification: "M.E. (Computer Science & Engineering)",
+        image: profVAChakkarwar
+      },
+      {
+        id: "cse-3",
+        name: "Prof. Vijayshri A. Injamuri",
+        designation: "Assistant Professor",
+        qualification: "M.E. (Computer Science & Engineering)",
+        image: null
+      },
+      {
+        id: "cse-4",
+        name: "Dr. Shilpa M. Kabra",
+        designation: "Assistant Professor",
+        qualification: "M.E (CSE), Ph.D (CSE)",
+        image: drShilpaKabra
+      }
+    ],
+    it: [
+      {
+        id: "it-1",
+        name: "Dr. A.W. Bhade",
+        designation: "Assistant Professor",
+        qualification: "M.E. (CSE)",
+        image: drAWBhade
+      },
+      {
+        id: "it-2",
+        name: "Dr. D.R. Uike",
+        designation: "Assistant Professor",
+        qualification: "M.E. (CSE)",
+        image: null
+      },
+      {
+        id: "it-3",
+        name: "Dr. Kishor Prakash Wagh",
+        designation: "Assistant Professor",
+        qualification: "Ph.D",
+        image: drKishorWagh
+      },
+      {
+        id: "it-4",
+        name: "Dr. Smita Chavan (Rathod)",
+        designation: "Head and Assistant Professor",
+        qualification: "Ph.D",
+        image: drSmitaChavan
+      },
+      {
+        id: "it-5",
+        name: "Mr. Rahul B. Mannade",
+        designation: "Assistant Professor",
+        qualification: "ME (CSE)",
+        image: mrRahulMannade
+      },
+      {
+        id: "it-6",
+        name: "Dr. N.M. Mule",
+        designation: "Assistant Professor",
+        qualification: "M.E. (CSE)",
+        image: drNMMule
+      },
+      {
+        id: "it-7",
+        name: "Prof. A.B. Chaudhari",
+        designation: "Assistant Professor",
+        qualification: "M.E. (CSE)",
+        image: null
+      }
+    ],
+    mca: [
+      {
+        id: "mca-1",
+        name: "Dr. Praveen Shetiye",
+        designation: "Associate Professor",
+        qualification: "PhD (Computer Science & Engineering)",
+        image: drPraveenShetiye
+      },
+      {
+        id: "mca-2",
+        name: "Dr. Gulve Avinash Khushal",
+        designation: "Associate Professor",
+        qualification: "PhD (Computer Science & Engineering)",
+        image: drGulveAvinash
+      },
+      {
+        id: "mca-3",
+        name: "Dr. Pardeshi Suraj Rameshsingh",
+        designation: "Assistant Professor",
+        qualification: "Ph. D. (Computer Science)",
+        image: drPardeshiSuraj
+      },
+      {
+        id: "mca-4",
+        name: "Dr. Sapkal Shubhangi Deorao",
+        designation: "HOD & Assistant Professor",
+        qualification: "PhD",
+        image: drSapkalShubhangi
+      }
+    ],
+    visitingFaculty: [
+      {
+        id: "vf-1",
+        name: "Prof. Shubham S. Madane",
+        designation: "Visiting Faculty",
+        qualification: "M.Tech CSE",
+        image: profShubhamMadane
+      },
+      {
+        id: "vf-2",
+        name: "Prof. Vaibhav M. Mokale",
+        designation: "Visiting Faculty",
+        qualification: "M.Tech CSE",
+        image: profVaibhavMokale
+      },
+      {
+        id: "vf-3",
+        name: "Prof. Aditya Sharma",
+        designation: "Visiting Faculty",
+        qualification: "M.Tech CSE",
+        image: profAdityaSharma
+      }
+    ]
   },
 
   // Keynote Speakers (No fictional identities)

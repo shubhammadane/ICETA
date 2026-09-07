@@ -1,29 +1,31 @@
 import React, { useState } from 'react';
-import { User, MapPin, Building, ExternalLink, Award, FileText } from 'lucide-react';
+import { User, MapPin, Building, Award, FileText } from 'lucide-react';
 
 export default function ProfileCard({
   name,
   role,
   designation,
+  position,
+  qualification,
   department,
   institution,
   country,
   image = null,
   bio = '',
   profileLink = '',
-  isSpeaker = false
+  isSpeaker = false,
+  departmentFirst = false
 }) {
   const [imageError, setImageError] = useState(false);
-  const [showBio, setShowBio] = useState(false);
 
   // Check if real verified image is provided and hasn't failed loading
-  const hasValidImage = Boolean(image && image.trim() !== '' && !imageError);
+  const hasValidImage = Boolean(image && (typeof image === 'string' ? image.trim() !== '' : true) && !imageError);
 
   // Derive initials for elegant fallback avatar
   const getInitials = (fullName) => {
     if (!fullName || fullName === "To be Announced") return "TBA";
     return fullName
-      .replace(/^Dr\.\s*|^Prof\.\s*|^Mr\.\s*|^Ms\.\s*/i, '')
+      .replace(/^Dr\.\s*|^Prof\.\s*|^Mr\.\s*|^Ms\.\s*|^Shri\s*/i, '')
       .split(' ')
       .filter(Boolean)
       .slice(0, 2)
@@ -39,7 +41,7 @@ export default function ProfileCard({
       isTBA ? 'border-dashed bg-slate-50/50' : 'hover:shadow-academic-hover shadow-sm'
     }`}>
       {/* Top Banner / Role Label */}
-      {role && (
+      {role && role !== position && (
         <div className={`px-4 py-2 text-xs font-bold tracking-wider uppercase flex items-center justify-between border-b ${
           isTBA 
             ? 'bg-slate-100 text-slate-500 border-slate-200' 
@@ -89,7 +91,25 @@ export default function ProfileCard({
               </p>
             )}
 
-            {department && (
+            {position && (
+              <p className="text-xs font-medium text-slate-600 leading-snug">
+                {position}
+              </p>
+            )}
+
+            {departmentFirst && department && (
+              <p className="text-xs text-slate-600 leading-snug">
+                {department}
+              </p>
+            )}
+
+            {qualification && (
+              <p className="text-[11px] font-medium text-slate-600 leading-snug">
+                {qualification}
+              </p>
+            )}
+
+            {!departmentFirst && department && (
               <p className="text-xs text-slate-600 leading-snug">
                 {department}
               </p>
@@ -114,33 +134,9 @@ export default function ProfileCard({
         {/* Biography (if provided) */}
         {bio && (
           <div className="mt-3 pt-3 border-t border-slate-100 text-xs text-slate-600 leading-relaxed">
-            <p className={showBio ? '' : 'line-clamp-3'}>
+            <p>
               {bio}
             </p>
-            {bio.length > 180 && (
-              <button
-                type="button"
-                onClick={() => setShowBio(!showBio)}
-                className="mt-1.5 text-[11px] font-semibold text-sky-700 hover:text-sky-900 focus:outline-none"
-              >
-                {showBio ? 'Show Less' : 'Read Full Biography'}
-              </button>
-            )}
-          </div>
-        )}
-
-        {/* Optional External Academic Profile Link */}
-        {profileLink && profileLink.trim() !== '' && (
-          <div className="mt-auto pt-3">
-            <a
-              href={profileLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-medium text-sky-700 hover:text-sky-900 hover:underline"
-            >
-              <span>View Academic Profile</span>
-              <ExternalLink className="w-3 h-3" />
-            </a>
           </div>
         )}
       </div>
