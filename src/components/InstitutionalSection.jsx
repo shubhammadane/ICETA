@@ -92,7 +92,7 @@ export default function InstitutionalSection() {
               {/* Editable Placeholders for Accreditations / Establishment */}
               <div className="pt-4 border-t border-slate-100 space-y-2 text-xs">
                 <div className="flex justify-between py-1 border-b border-slate-100">
-                  <span className="text-slate-500 font-medium">Department Head:</span>
+                  <span className="text-slate-500 font-medium">Head of Department (CSE):</span>
                   <span className="text-slate-900 font-bold">Dr. Vikul J. Pawar</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-slate-100">

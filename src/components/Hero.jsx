@@ -24,7 +24,7 @@ export default function Hero() {
             {/* Institution Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs text-sky-300 font-medium">
               <Building2 className="w-3.5 h-3.5 text-sky-400" />
-              <span>{conferenceData.department}</span>
+              <span>Jointly Organized by CSE • IT • MCA</span>
               <span className="text-white/30 hidden sm:inline">•</span>
               <span className="text-slate-300 hidden sm:inline">{conferenceData.institutionShort}</span>
             </div>

@@ -34,7 +34,7 @@ export default function Header() {
             <GraduationCap className="w-3.5 h-3.5 text-sky-400 shrink-0 hidden sm:inline" />
             <span className="font-semibold text-slate-200">{conferenceData.institution}</span>
             <span className="text-slate-500 hidden md:inline">|</span>
-            <span className="text-slate-300 hidden md:inline">{conferenceData.department}</span>
+            <span className="text-slate-300 hidden md:inline">{conferenceData.departmentShort}</span>
           </div>
           <div className="flex items-center gap-3 text-slate-400 text-[11px]">
             <span>{conferenceData.stateAndCountry}</span>

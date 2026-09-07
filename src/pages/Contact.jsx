@@ -25,7 +25,7 @@ export default function Contact() {
         <SectionTitle
           tag="Communications & Inquiries"
           title="Contact Conference Secretariat"
-          subtitle={`Reach out to the organizing team and Department of Computer Science and Engineering for academic inquiries, paper submissions, and logistics.`}
+          subtitle={`Reach out to the organizing team across the Departments of CSE, IT, and MCA for academic inquiries, paper submissions, and logistics.`}
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
@@ -56,7 +56,7 @@ export default function Contact() {
                   <div>
                     <span className="font-bold text-slate-900 block">Host Institution:</span>
                     <p>{conferenceData.institution}</p>
-                    <p className="text-slate-500">{conferenceData.department}</p>
+                    <p className="text-slate-500 font-medium mt-0.5">Jointly Organized by Departments of CSE, IT & MCA</p>
                   </div>
                 </div>
 

@@ -20,6 +20,42 @@ export default function Committee() {
           subtitle={`Organized under the academic governance of the ${conferenceData.department}, ${conferenceData.institution}.`}
         />
 
+        {/* Organizing Departments */}
+        <div className="mb-14">
+          <div className="flex items-center gap-2 mb-6">
+            <Building2 className="w-5 h-5 text-sky-600" />
+            <h3 className="text-xl font-bold text-slate-900 tracking-tight">
+              Organizing Departments
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {conferenceData.organizingDepartments.map((dept) => (
+              <div
+                key={dept.shortName}
+                className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-academic-hover transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-lg bg-navy-900 text-sky-400 flex items-center justify-center font-extrabold text-base mb-4 border border-navy-800">
+                    <span>{dept.shortName}</span>
+                  </div>
+                  <h4 className="font-bold text-base text-slate-900 leading-snug">
+                    {dept.name}
+                  </h4>
+                  <span className="inline-block mt-2 px-2.5 py-0.5 rounded text-xs font-semibold bg-sky-50 text-sky-800 border border-sky-200">
+                    {dept.shortName}
+                  </span>
+                </div>
+                <div className="mt-5 pt-3 border-t border-slate-100">
+                  <p className="text-xs text-slate-500 font-medium">
+                    {conferenceData.institution}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* General Chair Spotlight */}
         <div className="mb-14">
           <div className="flex items-center gap-2 mb-6">

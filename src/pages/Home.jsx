@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Send, 
-  ArrowRight, 
-  CheckCircle2, 
-  ShieldCheck, 
-  Layers, 
-  Calendar, 
-  BookOpen, 
-  GraduationCap, 
-  Users, 
+import {
+  Send,
+  ArrowRight,
+  CheckCircle2,
+  ShieldCheck,
+  Layers,
+  Calendar,
+  BookOpen,
+  GraduationCap,
+  Users,
   Sparkles,
   Award,
   Globe2
@@ -76,7 +76,7 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            
+
             {/* Left Column: About Narrative (6 cols) */}
             <div className="lg:col-span-6 space-y-6">
               <SectionTitle
@@ -87,7 +87,7 @@ export default function Home() {
 
               <div className="text-sm sm:text-base text-slate-600 space-y-4 leading-relaxed">
                 <p>
-                  The <strong>{conferenceData.fullName} ({conferenceData.shortName})</strong> is organized by the <strong>{conferenceData.department}</strong> at <strong>{conferenceData.institution}</strong>.
+                  The <strong>{conferenceData.fullName} ({conferenceData.shortName})</strong> is organized by the Departments of Computer Science and Engineering (CSE), Information Technology (IT), and Master of Computer Applications (MCA), Government College of Engineering, Chhatrapati Sambhajinagar.
                 </p>
                 <p>
                   As computing paradigms rapidly transition into intelligent, distributed, and post-quantum regimes, {conferenceData.shortName} serves as a premier international scholarly forum. The conference brings together world-class researchers, faculty, industry practitioners, and scholars to present novel theoretical insights, discuss robust experimental validations, and deliberate on ethical computing imperatives.

@@ -14,11 +14,25 @@ export const conferenceData = {
   year: "2027",
   edition: "1st International Edition",
   
-  // Organizing Institution & Department
+  // Organizing Institution & Departments
   institution: "Government College of Engineering, Chhatrapati Sambhajinagar",
   institutionShort: "GECA",
-  department: "Department of Computer Science and Engineering",
-  departmentShort: "Dept. of CSE",
+  department: "Departments of Computer Science and Engineering (CSE), Information Technology (IT), and Master of Computer Applications (MCA)",
+  departmentShort: "CSE • IT • MCA",
+  organizingDepartments: [
+    {
+      shortName: "CSE",
+      name: "Department of Computer Science and Engineering"
+    },
+    {
+      shortName: "IT",
+      name: "Department of Information Technology"
+    },
+    {
+      shortName: "MCA",
+      name: "Department of Master of Computer Applications"
+    }
+  ],
   stateAndCountry: "Maharashtra, India",
   venue: "Government College of Engineering, Chhatrapati Sambhajinagar, Maharashtra, India",
   locationTag: "2027 | Chhatrapati Sambhajinagar, Maharashtra, India",
@@ -429,10 +443,10 @@ export const conferenceData = {
   institutional: {
     name: "Government College of Engineering, Chhatrapati Sambhajinagar",
     shortName: "GECA",
-    departmentName: "Department of Computer Science and Engineering",
+    departmentName: "Departments of Computer Science & Engineering, Information Technology, and Master of Computer Applications",
     location: "Railway Station Road, Osmanpura, Chhatrapati Sambhajinagar (Aurangabad), Maharashtra 431005, India",
     overview: "Government College of Engineering, Chhatrapati Sambhajinagar is one of the premier autonomous engineering institutions established by the Government of Maharashtra. The college boasts a legacy of academic excellence, cutting-edge technical education, and pioneering research contributions across engineering disciplines.",
-    departmentOverview: "The Department of Computer Science and Engineering is committed to delivering state-of-the-art education and research in emerging paradigms of computing. With dedicated faculty, modern computing laboratories, and high-impact industry liaisons, the department actively conducts research in Artificial Intelligence, Cyber Defense, Cloud Systems, and Data Science.",
+    departmentOverview: "The conference is jointly organized by the Department of Computer Science and Engineering, the Department of Information Technology, and the Department of Master of Computer Applications. These departments are committed to delivering state-of-the-art education and research in emerging paradigms of computing, equipped with modern computing laboratories and active research initiatives in Artificial Intelligence, Cyber Defense, Cloud Systems, and Data Science.",
     highlights: [
       { title: "Autonomous Status", desc: "Autonomous engineering institute affiliated to Dr. Babasaheb Ambedkar Marathwada University." },
       { title: "Academic Programs", desc: "Undergraduate (B.Tech), Postgraduate (M.Tech), and Doctoral (Ph.D.) research programs in CSE." },

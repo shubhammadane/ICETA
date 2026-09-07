@@ -35,7 +35,7 @@ export default function Footer() {
                 Organized by:
               </p>
               <p className="font-semibold text-white">
-                {conferenceData.department}
+                CSE • IT • MCA
               </p>
               <p>
                 {conferenceData.institution}
@@ -137,7 +137,7 @@ export default function Footer() {
               © {conferenceData.year} {conferenceData.shortName}. All rights reserved.
             </p>
             <p className="text-[11px] text-slate-500 mt-0.5">
-              Organized by Department of Computer Science and Engineering, Government College of Engineering, Chhatrapati Sambhajinagar.
+              Organized by CSE • IT • MCA, Government College of Engineering, Chhatrapati Sambhajinagar.
             </p>
           </div>
 

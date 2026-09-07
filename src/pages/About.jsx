@@ -38,7 +38,7 @@ export default function About() {
                 Conference Purpose & Academic Focus
               </h3>
               <p>
-                The <strong>{conferenceData.fullName} ({conferenceData.shortName})</strong> is organized by the <strong>{conferenceData.department}</strong> at <strong>{conferenceData.institution}</strong>. The conference serves as a high-impact international platform engineered to bring together researchers, academicians, scientists, industry practitioners, and engineering students across the globe.
+                The <strong>{conferenceData.fullName} ({conferenceData.shortName})</strong> is jointly organized by the <strong>Department of Computer Science and Engineering (CSE)</strong>, <strong>Department of Information Technology (IT)</strong>, and <strong>Department of Master of Computer Applications (MCA)</strong> under <strong>{conferenceData.institution}, {conferenceData.stateAndCountry}</strong>. The conference serves as a high-impact international platform engineered to bring together researchers, academicians, scientists, industry practitioners, and engineering students across the globe.
               </p>
               <p>
                 The accelerating convergence of Artificial Intelligence, Quantum Information Science, and Advanced Cybersecurity represents one of the most transformative frontiers in modern computer science. {conferenceData.shortName} is conceived to critically explore this intersection, providing an open, academically rigorous venue for presenting novel foundational models, algorithmic optimizations, quantum hardware advancements, and post-quantum cryptographic defenses.
@@ -113,17 +113,23 @@ export default function About() {
             {/* Organizing Body Card */}
             <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm space-y-3">
               <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                Organizing Entity
+                Joint Organizing Departments
               </h4>
-              <p className="font-bold text-slate-900 text-sm sm:text-base">
-                {conferenceData.department}
-              </p>
-              <p className="text-xs text-slate-600">
-                {conferenceData.institution}
-              </p>
-              <p className="text-xs text-slate-500">
-                {conferenceData.venue}
-              </p>
+              <div className="space-y-1.5">
+                {conferenceData.organizingDepartments.map((dept) => (
+                  <p key={dept.shortName} className="font-bold text-slate-900 text-xs sm:text-sm">
+                    {dept.name} ({dept.shortName})
+                  </p>
+                ))}
+              </div>
+              <div className="pt-2 border-t border-slate-100 text-xs space-y-1">
+                <p className="font-semibold text-slate-700">
+                  {conferenceData.institution}
+                </p>
+                <p className="text-slate-500">
+                  {conferenceData.venue}
+                </p>
+              </div>
             </div>
 
           </div>
