@@ -1,3 +1,5 @@
+import drVikulJPawar from '../assets/images/committee/dr-vikul-j-pawar.jpg';
+
 /**
  * CENTRALIZED CONFERENCE CONFIGURATION
  * 
@@ -309,7 +311,7 @@ export const conferenceData = {
         department: "Department of Computer Science and Engineering",
         institution: "Government College of Engineering, Chhatrapati Sambhajinagar",
         country: "India",
-        image: null, // Will trigger "Photo Coming Soon" placeholder
+        image: drVikulJPawar,
         bio: "Dr. Vikul J. Pawar serves as the Head of the Department of Computer Science and Engineering at Government College of Engineering, Chhatrapati Sambhajinagar, Maharashtra, India. His leadership and research focus span advanced computer systems, intelligent computing, and academic research promotion.",
         profileLink: ""
       },
