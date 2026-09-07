@@ -335,11 +335,11 @@ export const conferenceData = {
 
   // Publication Route & Policies
   publication: {
-    proposedRoute: "Selected high-quality, peer-reviewed and presented papers will be considered for publication with Springer Nature as conference proceedings or an appropriate edited volume, subject to Springer Nature's editorial evaluation and publication policies.",
-    disclaimer: "Publication arrangements are subject to Springer Nature's proposal evaluation and applicable editorial policies.",
+    proposedRoute: "Selected high-quality, peer-reviewed and presented papers will be considered for publication as conference proceedings or an appropriate edited volume, subject to editorial evaluation and publication policies.",
+    disclaimer: "Publication arrangements are subject to formal proposal evaluation and applicable editorial policies.",
     guidelines: [
       "All accepted papers must be presented by at least one registered author during the scheduled conference session.",
-      "Only presented papers meeting standard peer-review benchmarks and Springer Nature editorial standards will be forwarded for proceedings inclusion.",
+      "Only presented papers meeting standard peer-review benchmarks and publisher editorial standards will be forwarded for proceedings inclusion.",
       "Authors will be required to submit signed copyright consent / publishing agreement forms upon acceptance.",
       "Plagiarism screening is mandatory; papers exceeding permitted similarity thresholds will be rejected without appeal."
     ]

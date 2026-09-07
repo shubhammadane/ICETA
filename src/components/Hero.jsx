@@ -197,7 +197,7 @@ export default function Hero() {
                 </div>
                 <div className="flex items-center justify-between text-xs">
                   <span className="text-slate-400">Proceedings Route:</span>
-                  <span className="font-semibold text-slate-200">Springer Nature (Proposed)</span>
+                  <span className="font-semibold text-slate-200">Conference Proceedings (Proposed)</span>
                 </div>
               </div>
 

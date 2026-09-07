@@ -103,7 +103,7 @@ export default function Footer() {
                 <span>Publication Framework</span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Selected high-quality peer-reviewed presented papers will be considered for publication with Springer Nature as proceedings or an edited volume, subject to editorial evaluation.
+                Selected high-quality peer-reviewed presented papers will be considered for publication as proceedings or an edited volume, subject to editorial evaluation.
               </p>
             </div>
 

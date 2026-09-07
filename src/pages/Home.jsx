@@ -62,7 +62,7 @@ export default function Home() {
 
             <div className="pt-2 md:pt-0 md:px-4">
               <span className="block text-2xl lg:text-3xl font-extrabold text-sky-400">
-                Springer Nature
+                Proceedings
               </span>
               <span className="text-xs text-slate-300 font-medium">
                 Proposed Publication Route

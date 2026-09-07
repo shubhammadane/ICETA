@@ -42,7 +42,7 @@ export default function Publication() {
               </h3>
             </div>
             <div className="shrink-0 bg-sky-50 border border-sky-200 text-sky-900 px-3.5 py-1.5 rounded-lg text-xs font-bold">
-              Springer Nature (Proposed)
+              Conference Proceedings (Proposed)
             </div>
           </div>
 
