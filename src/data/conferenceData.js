@@ -47,7 +47,7 @@ export const conferenceData = {
   
   // Organizing Institution & Departments
   institution: "Government College of Engineering, Chhatrapati Sambhajinagar",
-  institutionShort: "GECA",
+  institutionShort: "GECCS",
   department: "Departments of Computer Science and Engineering (CSE), Information Technology (IT), and Master of Computer Applications (MCA)",
   departmentShort: "CSE • IT • MCA",
   organizingDepartments: [
@@ -662,7 +662,7 @@ export const conferenceData = {
   // Institutional Section: Government College of Engineering, Chhatrapati Sambhajinagar
   institutional: {
     name: "Government College of Engineering, Chhatrapati Sambhajinagar",
-    shortName: "GECA",
+    shortName: "GECCS",
     departmentName: "Departments of Computer Science & Engineering, Information Technology, and Master of Computer Applications",
     location: "Railway Station Road, Osmanpura, Chhatrapati Sambhajinagar (Aurangabad), Maharashtra 431005, India",
     overview: "Government College of Engineering, Chhatrapati Sambhajinagar is one of the premier autonomous engineering institutions established by the Government of Maharashtra. The college boasts a legacy of academic excellence, cutting-edge technical education, and pioneering research contributions across engineering disciplines.",

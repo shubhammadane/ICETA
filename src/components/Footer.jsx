@@ -54,7 +54,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-1.5 text-sky-400 hover:text-sky-300 transition-colors"
               >
                 <Globe className="w-3.5 h-3.5" />
-                <span>Visit Official GECA Portal</span>
+                <span>Visit Official GECCS Portal</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>
