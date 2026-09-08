@@ -14,8 +14,9 @@ import drPraveenShetiye from '../assets/images/committee/dr-praveen-shetiye.png'
 import drSapkalShubhangi from '../assets/images/committee/dr-sapkal-shubhangi-deorao.png';
 import profShubhamMadane from '../assets/images/committee/prof-shubham-s-madane.jpg';
 import profVaibhavMokale from '../assets/images/committee/prof-vaibhav-m-mokale.png';
-import mrRahulMannade from '../assets/images/committee/mr-rahul-b-mannade.png';
 import profAdityaSharma from '../assets/images/committee/prof-aditya-sharma.jpg';
+import profVijayshriInjamuri from '../assets/images/committee/prof-vijayshri-a-injamuri.png';
+import profABChaudhari from '../assets/images/committee/prof-a-b-chaudhari.png';
 
 // Vite eager glob to automatically map verified committee & patron photos when files are present
 const committeeImages = import.meta.glob('../assets/images/committee/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
@@ -510,7 +511,7 @@ export const conferenceData = {
         name: "Prof. Vijayshri A. Injamuri",
         designation: "Assistant Professor",
         qualification: "M.E. (Computer Science & Engineering)",
-        image: null
+        image: profVijayshriInjamuri
       },
       {
         id: "cse-4",
@@ -551,24 +552,17 @@ export const conferenceData = {
       },
       {
         id: "it-5",
-        name: "Mr. Rahul B. Mannade",
-        designation: "Assistant Professor",
-        qualification: "ME (CSE)",
-        image: mrRahulMannade
-      },
-      {
-        id: "it-6",
         name: "Dr. N.M. Mule",
         designation: "Assistant Professor",
         qualification: "M.E. (CSE)",
         image: drNMMule
       },
       {
-        id: "it-7",
+        id: "it-6",
         name: "Prof. A.B. Chaudhari",
         designation: "Assistant Professor",
         qualification: "M.E. (CSE)",
-        image: null
+        image: profABChaudhari
       }
     ],
     mca: [
