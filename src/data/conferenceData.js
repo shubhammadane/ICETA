@@ -17,6 +17,7 @@ import profVaibhavMokale from '../assets/images/committee/prof-vaibhav-m-mokale.
 import profAdityaSharma from '../assets/images/committee/prof-aditya-sharma.jpg';
 import profVijayshriInjamuri from '../assets/images/committee/prof-vijayshri-a-injamuri.png';
 import profABChaudhari from '../assets/images/committee/prof-a-b-chaudhari.png';
+import drDRUike from '../assets/images/committee/dr-d-r-uike.png';
 
 // Vite eager glob to automatically map verified committee & patron photos when files are present
 const committeeImages = import.meta.glob('../assets/images/committee/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
@@ -534,7 +535,7 @@ export const conferenceData = {
         name: "Dr. D.R. Uike",
         designation: "Assistant Professor",
         qualification: "M.E. (CSE)",
-        image: null
+        image: drDRUike
       },
       {
         id: "it-3",
