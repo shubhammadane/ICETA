@@ -12,7 +12,7 @@ import drNMMule from '../assets/images/committee/dr-n-m-mule.jpg';
 import drGulveAvinash from '../assets/images/committee/dr-gulve-avinash-khushal.png';
 import drPraveenShetiye from '../assets/images/committee/dr-praveen-shetiye.png';
 import drSapkalShubhangi from '../assets/images/committee/dr-sapkal-shubhangi-deorao.png';
-import profShubhamMadane from '../assets/images/committee/prof-shubham-s-madane.jpg';
+import profShubhamMadane from '../assets/images/committee/prof-shubham-s-madane.png';
 import profVaibhavMokale from '../assets/images/committee/prof-vaibhav-m-mokale.png';
 import profAdityaSharma from '../assets/images/committee/prof-aditya-sharma.jpg';
 import profVijayshriInjamuri from '../assets/images/committee/prof-vijayshri-a-injamuri.png';
