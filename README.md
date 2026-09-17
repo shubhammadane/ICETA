@@ -4,6 +4,7 @@
 
 **27 January 2027**  
 **Government College of Engineering, Chhatrapati Sambhajinagar, Maharashtra, India**
+<img width="1906" height="943" alt="image" src="https://github.com/user-attachments/assets/44acbcd5-6a20-4685-89da-cfe03fce6ca8" />
 
 ---
 
