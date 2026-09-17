@@ -104,7 +104,7 @@ export default function Speakers() {
                   Invited Talks & Keynote Inquiries
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Academic researchers, laboratory directors, and industry leaders wishing to propose keynote topics or special invited sessions may contact the General Chair.
+                  Academic researchers, laboratory directors, and industry leaders wishing to propose keynote topics or special invited sessions may contact the Conference Coordinators.
                 </p>
                 <div className="pt-2">
                   <a
@@ -112,7 +112,7 @@ export default function Speakers() {
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-900 underline"
                   >
                     <Mail className="w-3.5 h-3.5" />
-                    <span>Contact General Chair ({conferenceData.contactEmail})</span>
+                    <span>Contact Coordinators ({conferenceData.contactEmail})</span>
                   </a>
                 </div>
               </div>

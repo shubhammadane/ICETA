@@ -6,8 +6,7 @@ import { conferenceData } from '../data/conferenceData';
 
 export default function Committee() {
   const { committee, organizingCommittees, patrons, coordinators } = conferenceData;
-  const generalChair = committee.leadership.find((m) => m.role === 'General Chair');
-  const organizingChairs = committee.leadership.filter((m) => m.role !== 'General Chair');
+  const organizingChairs = committee.leadership;
 
   return (
     <div className="py-12 md:py-16 space-y-16">
@@ -91,22 +90,6 @@ export default function Committee() {
             </div>
           </div>
         )}
-
-        {/* General Chair Spotlight */}
-        <div className="mb-14">
-          <div className="flex items-center gap-2 mb-6">
-            <Award className="w-5 h-5 text-sky-600" />
-            <h3 className="text-xl font-bold text-slate-900 tracking-tight">
-              General Chair
-            </h3>
-          </div>
-
-          {generalChair && (
-            <div className="max-w-2xl">
-              <CommitteeCard {...generalChair} />
-            </div>
-          )}
-        </div>
 
         {/* Organizing Committees */}
         <div className="space-y-12 mb-14">
@@ -201,34 +184,6 @@ export default function Committee() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {organizingCommittees.mca.map((member) => (
-                <CommitteeCard key={member.id} {...member} />
-              ))}
-            </div>
-          </div>
-
-          {/* Visiting Faculty */}
-          <div className="space-y-6">
-            <div className="flex items-center justify-between pb-3 border-b border-slate-200">
-              <div className="flex items-center gap-3">
-                <span className="w-8 h-8 rounded-lg bg-navy-900 text-sky-400 font-bold text-xs flex items-center justify-center border border-navy-800">
-                  VF
-                </span>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
-                    Visiting Faculty
-                  </h3>
-                  <p className="text-xs text-slate-500">
-                    Visiting and Adjunct Academic Faculty
-                  </p>
-                </div>
-              </div>
-              <span className="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200">
-                {organizingCommittees.visitingFaculty.length} Members
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {organizingCommittees.visitingFaculty.map((member) => (
                 <CommitteeCard key={member.id} {...member} />
               ))}
             </div>

@@ -347,21 +347,9 @@ export const conferenceData = {
     ]
   },
 
-  // Committee (Strictly authentic: Dr. Vikul J. Pawar, other roles TBA)
+  // Committee (Program Chairs & Academic Functional Committees)
   committee: {
     leadership: [
-      {
-        role: "General Chair",
-        name: "Dr. Vikul J. Pawar",
-        designation: "Head, Department of Computer Science and Engineering",
-        qualification: "M.E (CSE), Ph.D (CSE)",
-        department: "Department of Computer Science and Engineering",
-        institution: "Government College of Engineering, Chhatrapati Sambhajinagar",
-        country: "India",
-        image: drVikulJPawar,
-        bio: "Dr. Vikul J. Pawar serves as the Head of the Department of Computer Science and Engineering at Government College of Engineering, Chhatrapati Sambhajinagar, Maharashtra, India. His leadership and research focus span advanced computer systems, intelligent computing, and academic research promotion.",
-        profileLink: ""
-      },
       {
         role: "Technical Program Chair",
         name: "To be Announced",
@@ -490,16 +478,9 @@ export const conferenceData = {
     }
   ],
 
-  // Organizing Committees (Department-Wise & Visiting Faculty)
+  // Organizing Committees (Department-Wise)
   organizingCommittees: {
     cse: [
-      {
-        id: "cse-1",
-        name: "Dr. Vikul J. Pawar",
-        designation: "HOD, Assistant Professor",
-        qualification: "M.E (CSE), Ph.D (CSE)",
-        image: drVikulJPawar
-      },
       {
         id: "cse-2",
         name: "Prof. V.A. Chakkarwar",
@@ -520,6 +501,30 @@ export const conferenceData = {
         designation: "Assistant Professor",
         qualification: "M.E (CSE), Ph.D (CSE)",
         image: drShilpaKabra
+      },
+      {
+        id: "cse-5",
+        name: "Prof. Shubham S. Madane",
+        designation: "Visiting Faculty",
+        qualification: "M.Tech CSE",
+        department: "Computer Science and Engineering",
+        image: profShubhamMadane
+      },
+      {
+        id: "cse-6",
+        name: "Prof. Vaibhav M. Mokale",
+        designation: "Visiting Faculty",
+        qualification: "M.Tech CSE",
+        department: "Computer Science and Engineering",
+        image: profVaibhavMokale
+      },
+      {
+        id: "cse-7",
+        name: "Prof. Aditya Sharma",
+        designation: "Visiting Faculty",
+        qualification: "M.Tech CSE",
+        department: "Computer Science and Engineering",
+        image: profAdityaSharma
       }
     ],
     it: [
@@ -543,13 +548,6 @@ export const conferenceData = {
         designation: "Assistant Professor",
         qualification: "Ph.D",
         image: drKishorWagh
-      },
-      {
-        id: "it-4",
-        name: "Dr. Smita Chavan (Rathod)",
-        designation: "Head and Assistant Professor",
-        qualification: "Ph.D",
-        image: drSmitaChavan
       },
       {
         id: "it-5",
@@ -582,41 +580,11 @@ export const conferenceData = {
         image: drGulveAvinash
       },
       {
-        id: "mca-3",
-        name: "Dr. Pardeshi Suraj Rameshsingh",
-        designation: "Assistant Professor",
-        qualification: "Ph. D. (Computer Science)",
-        image: drPardeshiSuraj
-      },
-      {
         id: "mca-4",
         name: "Dr. Sapkal Shubhangi Deorao",
         designation: "HOD & Assistant Professor",
         qualification: "PhD",
         image: drSapkalShubhangi
-      }
-    ],
-    visitingFaculty: [
-      {
-        id: "vf-1",
-        name: "Prof. Shubham S. Madane",
-        designation: "Visiting Faculty",
-        qualification: "M.Tech CSE",
-        image: profShubhamMadane
-      },
-      {
-        id: "vf-2",
-        name: "Prof. Vaibhav M. Mokale",
-        designation: "Visiting Faculty",
-        qualification: "M.Tech CSE",
-        image: profVaibhavMokale
-      },
-      {
-        id: "vf-3",
-        name: "Prof. Aditya Sharma",
-        designation: "Visiting Faculty",
-        qualification: "M.Tech CSE",
-        image: profAdityaSharma
       }
     ]
   },

@@ -30,7 +30,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
-          {/* Main Contact Card & General Chair (7 cols) */}
+          {/* Main Contact Card & Coordinator (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
             <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
               
@@ -45,7 +45,7 @@ export default function Contact() {
                   Head, Department of Computer Science and Engineering
                 </p>
                 <p className="text-xs text-slate-500">
-                  General Chair, {conferenceData.shortName}
+                  Coordinator, {conferenceData.shortName}
                 </p>
               </div>
 

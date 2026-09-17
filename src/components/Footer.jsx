@@ -119,7 +119,7 @@ export default function Footer() {
                     {conferenceData.contactEmail}
                   </a>
                   <p className="text-[11px] text-slate-400 mt-0.5">
-                    Dr. Vikul J. Pawar (General Chair)
+                    Dr. Vikul J. Pawar (Coordinator)
                   </p>
                 </div>
               </div>
