@@ -18,6 +18,15 @@ import profAdityaSharma from '../assets/images/committee/prof-aditya-sharma.jpg'
 import profVijayshriInjamuri from '../assets/images/committee/prof-vijayshri-a-injamuri.png';
 import profABChaudhari from '../assets/images/committee/prof-a-b-chaudhari.png';
 import drDRUike from '../assets/images/committee/dr-d-r-uike.png';
+import drManeshBKokare from '../assets/images/committee/dr-manesh-b-kokare.jpg';
+import drGaneshPakle from '../assets/images/committee/dr-ganesh-pakle.png';
+import drPremchandAmbhore from '../assets/images/committee/dr-premchand-ambhore.png';
+import drAnjanaGhule from '../assets/images/committee/dr-anjana-ghule.png';
+import drChitraWagh from '../assets/images/committee/dr-chitra-wagh.png';
+import drPrashantPathak from '../assets/images/committee/dr-prashant-pathak.jpg';
+import drLateshMalik from '../assets/images/committee/dr-latesh-malik.png';
+import drKailashDKharat from '../assets/images/committee/dr-kailash-d-kharat.png';
+import drPrashantBJawade from '../assets/images/committee/dr-prashant-b-jawade.png';
 
 // Vite eager glob to automatically map verified committee & patron photos when files are present
 const committeeImages = import.meta.glob('../assets/images/committee/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
@@ -474,6 +483,78 @@ export const conferenceData = {
       qualification: "Ph. D. (Computer Science)",
       image: pardeshiPhoto,
       departmentFirst: true
+    }
+  ],
+
+  // External Advisory Committee
+  externalAdvisoryCommittee: [
+    {
+      id: "eac-1",
+      name: "Dr. Manesh B. Kokare",
+      designation: "Director",
+      institution: "SGGSIE&T, Nanded",
+      image: drManeshBKokare
+    },
+    {
+      id: "eac-2",
+      name: "Dr. Ganesh Pakle",
+      designation: "Assistant Professor",
+      institution: "SGGSIE&T, Nanded",
+      image: drGaneshPakle
+    },
+    {
+      id: "eac-3",
+      name: "Dr. Prashant Pathak",
+      designation: "Assistant Professor",
+      department: "CSE",
+      location: "Kolhapur",
+      image: drPrashantPathak
+    },
+    {
+      id: "eac-4",
+      name: "Dr. Kailash D. Kharat",
+      designation: "Associate Professor",
+      institution: "CSMSS",
+      location: "Chhatrapati Sambhajinagar",
+      image: drKailashDKharat
+    },
+    {
+      id: "eac-5",
+      name: "Dr. Anjana Ghule",
+      designation: "Assistant Professor",
+      department: "IT",
+      image: drAnjanaGhule
+    },
+    {
+      id: "eac-6",
+      name: "Dr. Chitra Wagh",
+      designation: "Assistant Professor",
+      department: "IT",
+      image: drChitraWagh
+    },
+    {
+      id: "eac-7",
+      name: "Dr. Premchand Ambhore",
+      designation: "Assistant Professor",
+      department: "IT",
+      location: "Amravati",
+      image: drPremchandAmbhore
+    },
+    {
+      id: "eac-8",
+      name: "Dr. Latesh Malik",
+      designation: "Associate Professor & Head",
+      department: "CSE",
+      location: "Nagpur",
+      image: drLateshMalik
+    },
+    {
+      id: "eac-9",
+      name: "Dr. Prashant B. Jawade",
+      designation: "Assistant Professor",
+      department: "CSE",
+      location: "Nagpur",
+      image: drPrashantBJawade
     }
   ],
 

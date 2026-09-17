@@ -10,6 +10,7 @@ export default function ProfileCard({
   department,
   institution,
   country,
+  location,
   image = null,
   bio = '',
   profileLink = '',
@@ -122,10 +123,10 @@ export default function ProfileCard({
               </p>
             )}
 
-            {country && (
+            {(location || country) && (
               <p className="text-xs text-slate-500 flex items-center justify-center sm:justify-start gap-1">
                 <MapPin className="w-3 h-3 text-slate-400 shrink-0" />
-                <span>{country}</span>
+                <span>{location || country}</span>
               </p>
             )}
           </div>
