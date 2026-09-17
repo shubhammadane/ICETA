@@ -39,7 +39,7 @@ export default function Header() {
           <div className="flex items-center gap-3 text-slate-400 text-[11px]">
             <span>{conferenceData.stateAndCountry}</span>
             <span className="text-slate-600">•</span>
-            <span className="text-sky-300 font-medium">{conferenceData.year}</span>
+            <span className="text-sky-300 font-medium">{conferenceData.conferenceDate}</span>
           </div>
         </div>
       </div>

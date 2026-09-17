@@ -21,7 +21,7 @@ export default function Footer() {
                   {conferenceData.shortName}
                 </span>
                 <span className="text-xs text-sky-400 font-medium">
-                  {conferenceData.edition} • {conferenceData.year}
+                  {conferenceData.edition} • {conferenceData.conferenceDate}
                 </span>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function Footer() {
               </p>
               <p className="text-slate-400 flex items-center gap-1.5 pt-1">
                 <MapPin className="w-3.5 h-3.5 text-sky-400 shrink-0" />
-                <span>Chhatrapati Sambhajinagar, Maharashtra, India</span>
+                <span>{conferenceData.conferenceDate} | Chhatrapati Sambhajinagar, Maharashtra, India</span>
               </p>
             </div>
 
@@ -154,6 +154,18 @@ export default function Footer() {
               Research Dissemination
             </span>
           </div>
+        </div>
+
+        {/* Professional Developer Credit */}
+        <div className="mt-4 pt-3 border-t border-white/5 text-center">
+          <a
+            href="https://github.com/shubhammadane"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[11px] text-slate-500 hover:text-sky-400 transition-colors font-medium tracking-wide inline-block hover:underline underline-offset-2"
+          >
+            Developed by Shubham Madane
+          </a>
         </div>
       </div>
     </footer>

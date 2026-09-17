@@ -16,7 +16,7 @@ export default function ImportantDates() {
         <SectionTitle
           tag="Conference Schedule"
           title="Important Dates"
-          subtitle={`Review key milestone timelines for ${conferenceData.shortName}. All deadlines are scheduled in tentative phases for the 2027 academic cycle.`}
+          subtitle={`Review key milestone timelines for ${conferenceData.shortName}. The conference will be held on ${conferenceData.conferenceDate}. All deadlines are scheduled in tentative phases.`}
         />
 
         {/* Timeline Component */}

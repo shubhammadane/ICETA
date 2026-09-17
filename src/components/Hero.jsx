@@ -51,7 +51,7 @@ export default function Hero() {
               {conferenceData.description}
             </p>
 
-            {/* Conference Details Strip: Location & Tentative Year */}
+            {/* Conference Details Strip: Location & Date */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-xs sm:text-sm text-slate-300 font-medium">
               <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2 rounded-lg">
                 <MapPin className="w-4 h-4 text-sky-400 shrink-0" />
@@ -59,7 +59,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2 rounded-lg">
                 <Calendar className="w-4 h-4 text-sky-400 shrink-0" />
-                <span>Tentative Date: August/September 2027</span>
+                <span>Conference Date: {conferenceData.conferenceDate}</span>
               </div>
             </div>
 

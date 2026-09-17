@@ -67,7 +67,8 @@ export const conferenceData = {
   ],
   stateAndCountry: "Maharashtra, India",
   venue: "Government College of Engineering, Chhatrapati Sambhajinagar, Maharashtra, India",
-  locationTag: "2027 | Chhatrapati Sambhajinagar, Maharashtra, India",
+  locationTag: "27 January 2027 | Chhatrapati Sambhajinagar, Maharashtra, India",
+  conferenceDate: "27 January 2027",
   
   // Official Contact
   contactEmail: "vikul.pawar@geca.ac.in",
@@ -323,16 +324,14 @@ export const conferenceData = {
     ]
   },
 
-  // Tentative Important Dates (No exact fake dates invented)
+  // Tentative Important Dates Timeline
   importantDates: [
-    { activity: "Conference Announcement", date: "January 2027", status: "Upcoming" },
-    { activity: "Call for Papers", date: "January 2027", status: "Upcoming" },
-    { activity: "Paper Submission Opens", date: "January 2027", status: "Upcoming" },
-    { activity: "Paper Submission Deadline", date: "May 2027", status: "Upcoming" },
-    { activity: "Notification of Acceptance", date: "June 2027", status: "Upcoming" },
-    { activity: "Camera-Ready Submission", date: "July 2027", status: "Upcoming" },
-    { activity: "Author Registration", date: "July 2027", status: "Upcoming" },
-    { activity: "Conference Sessions", date: "August / September 2027", status: "Tentative" }
+    { activity: "Paper Submission Deadline", date: "15 November 2026", status: "Tentative" },
+    { activity: "Notification of Acceptance", date: "10 December 2026", status: "Tentative" },
+    { activity: "Camera-Ready Paper Submission", date: "25 December 2026", status: "Tentative" },
+    { activity: "Early-Bird Registration Deadline", date: "31 December 2026", status: "Tentative" },
+    { activity: "Final Registration Deadline", date: "15 January 2027", status: "Tentative" },
+    { activity: "Conference Date", date: "27 January 2027", status: "Tentative" }
   ],
 
   // Publication Route & Policies

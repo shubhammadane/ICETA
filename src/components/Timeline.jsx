@@ -11,13 +11,13 @@ export default function Timeline({ dates = conferenceData.importantDates, showNo
           <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
           <div className="text-xs sm:text-sm leading-relaxed">
             <span className="font-bold block text-amber-950">Tentative Important Dates:</span>
-            Dates listed below represent the initial scheduling timeline. Specific day deadlines will be updated officially in the Call for Papers portal as conference milestones approach.
+            Dates listed below represent the tentative scheduling timeline for {conferenceData.shortName} leading up to the conference on {conferenceData.conferenceDate}.
           </div>
         </div>
       )}
 
       {/* Grid / Timeline Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {dates.map((item, index) => {
           const isConference = item.activity.toLowerCase().includes('conference');
           const isDeadline = item.activity.toLowerCase().includes('deadline');
