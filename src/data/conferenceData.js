@@ -4,7 +4,7 @@ import drPramodNaik from '../assets/images/committee/dr-pramod-naik.png';
 import drSanjayDambhare from '../assets/images/committee/dr-sanjay-dambhare.png';
 import drAWBhade from '../assets/images/committee/dr-a-w-bhade.png';
 import drSmitaChavan from '../assets/images/committee/dr-smita-chavan-rathod.png';
-import drPardeshiSuraj from '../assets/images/committee/dr-pardeshi-suraj-rameshsingh.jpg';
+import drPardeshiSuraj from '../assets/images/committee/dr-pardeshi-suraj-rameshsingh.png';
 import profVAChakkarwar from '../assets/images/committee/prof-v-a-chakkarwar.jpg';
 import drShilpaKabra from '../assets/images/committee/dr-shilpa-m-kabra.png';
 import drKishorWagh from '../assets/images/committee/dr-kishor-prakash-wagh.png';
