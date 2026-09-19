@@ -91,34 +91,6 @@ export default function Committee() {
           </div>
         )}
 
-        {/* External Advisory Committee */}
-        {externalAdvisoryCommittee && externalAdvisoryCommittee.length > 0 && (
-          <div className="mb-14">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-6 border-b border-slate-200">
-              <div>
-                <div className="flex items-center gap-2">
-                  <Users className="w-5 h-5 text-sky-600" />
-                  <h3 className="text-xl font-bold text-slate-900 tracking-tight">
-                    External Advisory Committee
-                  </h3>
-                </div>
-                <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
-                  Distinguished External Academic and Professional Advisors
-                </p>
-              </div>
-              <span className="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200 self-start sm:self-auto">
-                {externalAdvisoryCommittee.length} Members
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {externalAdvisoryCommittee.map((member) => (
-                <CommitteeCard key={member.id} {...member} />
-              ))}
-            </div>
-          </div>
-        )}
-
         {/* Organizing Committees */}
         <div className="space-y-12 mb-14">
           <div className="border-b border-slate-200 pb-4">
@@ -217,6 +189,34 @@ export default function Committee() {
             </div>
           </div>
         </div>
+
+        {/* External Advisory Committee */}
+        {externalAdvisoryCommittee && externalAdvisoryCommittee.length > 0 && (
+          <div className="mb-14">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-6 border-b border-slate-200">
+              <div>
+                <div className="flex items-center gap-2">
+                  <Users className="w-5 h-5 text-sky-600" />
+                  <h3 className="text-xl font-bold text-slate-900 tracking-tight">
+                    External Advisory Committee
+                  </h3>
+                </div>
+                <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
+                  Distinguished External Academic and Professional Advisors
+                </p>
+              </div>
+              <span className="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200 self-start sm:self-auto">
+                {externalAdvisoryCommittee.length} Members
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {externalAdvisoryCommittee.map((member) => (
+                <CommitteeCard key={member.id} {...member} />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Organizing Chairs & Functional Committees */}
         <div className="space-y-6">

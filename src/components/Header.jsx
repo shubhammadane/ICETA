@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Send, GraduationCap, ChevronRight, ArrowUpRight } from 'lucide-react';
 import { conferenceData } from '../data/conferenceData';
+import officialLogo from '../assets/images/institution/media_1789814226823.png';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,17 +29,27 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 transition-shadow duration-300">
       {/* Top Institutional Bar */}
-      <div className="bg-navy-950 text-slate-300 text-xs py-1.5 px-4 sm:px-6 lg:px-8 border-b border-navy-900">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1">
-          <div className="flex items-center gap-2 text-center sm:text-left">
-            <GraduationCap className="w-3.5 h-3.5 text-sky-400 shrink-0 hidden sm:inline" />
-            <span className="font-semibold text-slate-200">{conferenceData.institution}</span>
-            <span className="text-slate-500 hidden md:inline">|</span>
-            <span className="text-slate-300 hidden md:inline">{conferenceData.departmentShort}</span>
+      <div className="bg-navy-950 text-slate-300 py-2 sm:py-2.5 px-4 sm:px-6 lg:px-8 border-b border-navy-900">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-4">
+          <div className="flex items-center gap-2.5 sm:gap-3 text-center sm:text-left">
+            <img
+              src={officialLogo}
+              alt="Government College of Engineering, Chhatrapati Sambhajinagar Logo"
+              className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 object-contain aspect-square shrink-0 rounded"
+            />
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-0.5">
+              <span className="font-bold text-slate-100 text-xs sm:text-sm md:text-[15px] lg:text-base tracking-tight">
+                {conferenceData.institution}
+              </span>
+              <span className="text-slate-500 font-normal">|</span>
+              <span className="text-sky-300 font-semibold text-[11px] sm:text-xs md:text-sm whitespace-nowrap">
+                {conferenceData.departmentShort}
+              </span>
+            </div>
           </div>
-          <div className="flex items-center gap-3 text-slate-400 text-[11px]">
+          <div className="flex items-center gap-2 text-slate-400 text-[11px] sm:text-xs whitespace-nowrap shrink-0">
             <span>{conferenceData.stateAndCountry}</span>
-            <span className="text-slate-600">•</span>
+            <span className="text-slate-600">|</span>
             <span className="text-sky-300 font-medium">{conferenceData.conferenceDate}</span>
           </div>
         </div>
@@ -50,16 +61,16 @@ export default function Header() {
       }`}>
         <div className="flex items-center justify-between gap-4">
           {/* Logo & Conference Brand */}
-          <Link to="/" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-navy-900 rounded-lg p-1">
+          <Link to="/" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-navy-900 rounded-lg p-1 shrink-0">
             <div className="w-10 h-10 rounded-lg bg-navy-900 text-white flex items-center justify-center font-bold text-lg shadow-sm border border-navy-800 group-hover:bg-navy-800 transition-colors">
               <span className="tracking-tighter text-sky-400">IQ</span>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col justify-center">
               <div className="flex items-center gap-2">
                 <span className="font-extrabold text-lg sm:text-xl text-navy-950 tracking-tight leading-none group-hover:text-sky-700 transition-colors">
                   {conferenceData.shortName}
                 </span>
-                <span className="bg-sky-100 text-sky-800 text-[10px] font-bold px-1.5 py-0.5 rounded border border-sky-200">
+                <span className="bg-sky-100 text-sky-800 text-[10px] sm:text-[11px] font-bold px-1.5 py-0.5 rounded border border-sky-200">
                   {conferenceData.year}
                 </span>
               </div>
