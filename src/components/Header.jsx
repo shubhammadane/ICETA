@@ -29,20 +29,20 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 transition-shadow duration-300">
       {/* Top Institutional Bar */}
-      <div className="bg-navy-950 text-slate-300 py-2 sm:py-2.5 px-4 sm:px-6 lg:px-8 border-b border-navy-900">
+      <div className="bg-navy-950 text-slate-300 py-2.5 sm:py-3 px-4 sm:px-6 lg:px-8 border-b border-navy-900">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-4">
-          <div className="flex items-center gap-2.5 sm:gap-3 text-center sm:text-left">
+          <div className="flex items-center gap-2.5 sm:gap-3 md:gap-4 text-center sm:text-left">
             <img
               src={officialLogo}
               alt="Government College of Engineering, Chhatrapati Sambhajinagar Logo"
-              className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 object-contain aspect-square shrink-0 rounded"
+              className="h-9 w-9 sm:h-11 sm:w-11 md:h-12 md:w-12 lg:h-14 lg:w-14 object-contain aspect-square shrink-0 rounded"
             />
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-0.5">
-              <span className="font-bold text-slate-100 text-xs sm:text-sm md:text-[15px] lg:text-base tracking-tight">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-2.5 gap-y-1">
+              <span className="font-extrabold text-slate-50 text-sm sm:text-base md:text-xl lg:text-[22px] tracking-tight leading-tight">
                 {conferenceData.institution}
               </span>
-              <span className="text-slate-500 font-normal">|</span>
-              <span className="text-sky-300 font-semibold text-[11px] sm:text-xs md:text-sm whitespace-nowrap">
+              <span className="text-slate-500 font-normal text-sm md:text-base">|</span>
+              <span className="text-sky-300 font-semibold text-[11px] sm:text-sm md:text-base whitespace-nowrap">
                 {conferenceData.departmentShort}
               </span>
             </div>
