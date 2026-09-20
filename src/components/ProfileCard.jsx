@@ -14,6 +14,7 @@ export default function ProfileCard({
   image = null,
   bio = '',
   profileLink = '',
+  linkedin = '',
   isSpeaker = false,
   departmentFirst = false
 }) {
@@ -138,6 +139,30 @@ export default function ProfileCard({
             <p>
               {bio}
             </p>
+          </div>
+        )}
+
+        {/* LinkedIn Profile Link (only when explicitly provided) */}
+        {linkedin && (
+          <div className="mt-auto pt-3 border-t border-slate-100">
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky-700 hover:text-sky-900 hover:underline transition-colors"
+            >
+              {/* LinkedIn SVG icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-3.5 h-3.5 text-sky-600"
+                aria-hidden="true"
+              >
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.869 0-2.156 1.46-2.156 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.844-1.563 3.042 0 3.604 2.003 3.604 4.608v5.588z"/>
+              </svg>
+              LinkedIn Profile
+            </a>
           </div>
         )}
       </div>

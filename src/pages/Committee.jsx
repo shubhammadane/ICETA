@@ -1,11 +1,11 @@
 import React from 'react';
-import { Users, Award, ShieldCheck, Mail, Building2, CheckCircle2 } from 'lucide-react';
+import { Users, Award, ShieldCheck, Mail, Building2, CheckCircle2, Briefcase } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 import CommitteeCard from '../components/CommitteeCard';
 import { conferenceData } from '../data/conferenceData';
 
 export default function Committee() {
-  const { committee, organizingCommittees, patrons, coordinators, externalAdvisoryCommittee } = conferenceData;
+  const { committee, organizingCommittees, patrons, coordinators, externalAdvisoryCommittee, industryAdvisoryCommittee } = conferenceData;
   const organizingChairs = committee.leadership;
 
   return (
@@ -212,6 +212,34 @@ export default function Committee() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {externalAdvisoryCommittee.map((member) => (
+                <CommitteeCard key={member.id} {...member} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Industry Advisory Committee */}
+        {industryAdvisoryCommittee && industryAdvisoryCommittee.length > 0 && (
+          <div className="mb-14">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-6 border-b border-slate-200">
+              <div>
+                <div className="flex items-center gap-2">
+                  <Briefcase className="w-5 h-5 text-sky-600" />
+                  <h3 className="text-xl font-bold text-slate-900 tracking-tight">
+                    Industry Advisory Committee
+                  </h3>
+                </div>
+                <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
+                  Distinguished industry professionals contributing practical insights, industry perspectives, and guidance on emerging technologies for ICETAQC 2027.
+                </p>
+              </div>
+              <span className="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200 self-start sm:self-auto">
+                {industryAdvisoryCommittee.length} Members
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {industryAdvisoryCommittee.map((member) => (
                 <CommitteeCard key={member.id} {...member} />
               ))}
             </div>

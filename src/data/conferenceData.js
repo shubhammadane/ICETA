@@ -27,6 +27,7 @@ import drPrashantPathak from '../assets/images/committee/dr-prashant-pathak.jpg'
 import drLateshMalik from '../assets/images/committee/dr-latesh-malik.png';
 import drKailashDKharat from '../assets/images/committee/dr-kailash-d-kharat.png';
 import drPrashantBJawade from '../assets/images/committee/dr-prashant-b-jawade.png';
+import drParikshitMahalle from '../assets/images/committee/dr-parikshit-mahalle.png';
 
 // Vite eager glob to automatically map verified committee & patron photos when files are present
 const committeeImages = import.meta.glob('../assets/images/committee/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
@@ -490,20 +491,27 @@ export const conferenceData = {
   externalAdvisoryCommittee: [
     {
       id: "eac-1",
+      name: "Dr. Parikshit Mahalle",
+      designation: "Dean, R&D",
+      institution: "Vishwakarma Institute of Technology",
+      image: drParikshitMahalle
+    },
+    {
+      id: "eac-2",
       name: "Dr. Manesh B. Kokare",
       designation: "Director",
       institution: "SGGSIE&T, Nanded",
       image: drManeshBKokare
     },
     {
-      id: "eac-2",
+      id: "eac-3",
       name: "Dr. Ganesh Pakle",
       designation: "Assistant Professor",
       institution: "SGGSIE&T, Nanded",
       image: drGaneshPakle
     },
     {
-      id: "eac-3",
+      id: "eac-4",
       name: "Dr. Prashant Pathak",
       designation: "Assistant Professor",
       department: "CSE",
@@ -511,7 +519,7 @@ export const conferenceData = {
       image: drPrashantPathak
     },
     {
-      id: "eac-4",
+      id: "eac-5",
       name: "Dr. Kailash D. Kharat",
       designation: "Associate Professor",
       institution: "CSMSS",
@@ -519,21 +527,63 @@ export const conferenceData = {
       image: drKailashDKharat
     },
     {
-      id: "eac-5",
+      id: "eac-6",
+      name: "Dr. Sunil B. Mane",
+      designation: "Associate Professor & Training and Placement Officer",
+      department: "CSE",
+      institution: "COEP"
+    },
+    {
+      id: "eac-7",
+      name: "Dr. V. K. Haribhakta",
+      designation: "Associate Professor, Vice President Boat Club",
+      department: "CSE",
+      institution: "COEP"
+    },
+    {
+      id: "eac-8",
+      name: "Dr. Haridas D. Gadade",
+      designation: "Assistant Professor",
+      department: "CSE",
+      institution: "COEP"
+    },
+    {
+      id: "eac-9",
+      name: "Nitin Nandkumar Sakhare",
+      designation: "Associate Professor",
+      department: "CSE",
+      institution: "VIT"
+    },
+    {
+      id: "eac-10",
+      name: "Dr. Vijay Uttam Rathod",
+      designation: "Assistant Professor",
+      department: "CSE",
+      institution: "VIT"
+    },
+    {
+      id: "eac-11",
+      name: "Prof. Sudhirkumar Shikalpure",
+      designation: "Assistant Professor",
+      department: "CSE",
+      location: "Kolhapur"
+    },
+    {
+      id: "eac-12",
       name: "Dr. Anjana Ghule",
       designation: "Assistant Professor",
       department: "IT",
       image: drAnjanaGhule
     },
     {
-      id: "eac-6",
+      id: "eac-13",
       name: "Dr. Chitra Wagh",
       designation: "Assistant Professor",
       department: "IT",
       image: drChitraWagh
     },
     {
-      id: "eac-7",
+      id: "eac-14",
       name: "Dr. Premchand Ambhore",
       designation: "Assistant Professor",
       department: "IT",
@@ -541,7 +591,7 @@ export const conferenceData = {
       image: drPremchandAmbhore
     },
     {
-      id: "eac-8",
+      id: "eac-15",
       name: "Dr. Latesh Malik",
       designation: "Associate Professor & Head",
       department: "CSE",
@@ -549,12 +599,49 @@ export const conferenceData = {
       image: drLateshMalik
     },
     {
-      id: "eac-9",
+      id: "eac-16",
       name: "Dr. Prashant B. Jawade",
       designation: "Assistant Professor",
       department: "CSE",
       location: "Nagpur",
       image: drPrashantBJawade
+    }
+  ],
+
+  // Industry Advisory Committee
+  industryAdvisoryCommittee: [
+    {
+      id: "iac-1",
+      name: "Mahendra Garodi",
+      designation: "Software Engineer",
+      institution: "Apple",
+      linkedin: "https://www.linkedin.com/in/garodimahendra/"
+    },
+    {
+      id: "iac-2",
+      name: "Ashwin Kulkarni",
+      designation: "Software Engineer",
+      institution: "Stripe",
+      linkedin: "https://www.linkedin.com/in/iashwin28/"
+    },
+    {
+      id: "iac-3",
+      name: "Chinmay Kulkarni",
+      institution: "Samsung R&D Institute India – Bangalore",
+      linkedin: "https://www.linkedin.com/in/chinmaypk15/"
+    },
+    {
+      id: "iac-4",
+      name: "Dhiraj Varma",
+      designation: "Security Researcher",
+      institution: "Synack Red Team"
+    },
+    {
+      id: "iac-5",
+      name: "Medha Deshpande",
+      designation: "Director",
+      institution: "MediAstra Technologies",
+      linkedin: "https://www.linkedin.com/in/medha-deshpande-64362a25/"
     }
   ],
 
