@@ -28,6 +28,17 @@ import drLateshMalik from '../assets/images/committee/dr-latesh-malik.png';
 import drKailashDKharat from '../assets/images/committee/dr-kailash-d-kharat.png';
 import drPrashantBJawade from '../assets/images/committee/dr-prashant-b-jawade.png';
 import drParikshitMahalle from '../assets/images/committee/dr-parikshit-mahalle.png';
+import drSunilBMane from '../assets/images/committee/dr-sunil-b-mane.png';
+import drHaridasDGadade from '../assets/images/committee/dr-haridas-d-gadade.png';
+import drVKHaribhakta from '../assets/images/committee/dr-v-k-haribhakta.png';
+import drNitinNandkumarSakhare from '../assets/images/committee/dr-nitin-nandkumar-sakhare.jpg';
+import drVijayUttamRathod from '../assets/images/committee/dr-vijay-uttam-rathod.jpg';
+import profSudhirkumarShikalpure from '../assets/images/committee/prof-sudhirkumar-shikalpure.png';
+import mahendraGarodi from '../assets/images/committee/mahendra-garodi.png';
+import ashwinKulkarni from '../assets/images/committee/ashwin-kulkarni.png';
+import chinmayKulkarni from '../assets/images/committee/chinmay-kulkarni.png';
+import dhirajVarma from '../assets/images/committee/dhiraj-varma.png';
+import medhaDeshpande from '../assets/images/committee/medha-deshpande.png';
 
 // Vite eager glob to automatically map verified committee & patron photos when files are present
 const committeeImages = import.meta.glob('../assets/images/committee/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
@@ -531,42 +542,48 @@ export const conferenceData = {
       name: "Dr. Sunil B. Mane",
       designation: "Associate Professor & Training and Placement Officer",
       department: "CSE",
-      institution: "COEP"
+      institution: "COEP",
+      image: drSunilBMane
     },
     {
       id: "eac-7",
       name: "Dr. V. K. Haribhakta",
       designation: "Associate Professor, Vice President Boat Club",
       department: "CSE",
-      institution: "COEP"
+      institution: "COEP",
+      image: drVKHaribhakta
     },
     {
       id: "eac-8",
       name: "Dr. Haridas D. Gadade",
       designation: "Assistant Professor",
       department: "CSE",
-      institution: "COEP"
+      institution: "COEP",
+      image: drHaridasDGadade
     },
     {
       id: "eac-9",
-      name: "Nitin Nandkumar Sakhare",
+      name: "Dr. Nitin Nandkumar Sakhare",
       designation: "Associate Professor",
       department: "CSE",
-      institution: "VIT"
+      institution: "VIT",
+      image: drNitinNandkumarSakhare
     },
     {
       id: "eac-10",
       name: "Dr. Vijay Uttam Rathod",
       designation: "Assistant Professor",
       department: "CSE",
-      institution: "VIT"
+      institution: "VIT",
+      image: drVijayUttamRathod
     },
     {
       id: "eac-11",
       name: "Prof. Sudhirkumar Shikalpure",
       designation: "Assistant Professor",
       department: "CSE",
-      location: "Kolhapur"
+      location: "Kolhapur",
+      image: profSudhirkumarShikalpure
     },
     {
       id: "eac-12",
@@ -615,6 +632,7 @@ export const conferenceData = {
       name: "Mahendra Garodi",
       designation: "Software Engineer",
       institution: "Apple",
+      image: mahendraGarodi,
       linkedin: "https://www.linkedin.com/in/garodimahendra/"
     },
     {
@@ -622,25 +640,29 @@ export const conferenceData = {
       name: "Ashwin Kulkarni",
       designation: "Software Engineer",
       institution: "Stripe",
+      image: ashwinKulkarni,
       linkedin: "https://www.linkedin.com/in/iashwin28/"
     },
     {
       id: "iac-3",
       name: "Chinmay Kulkarni",
       institution: "Samsung R&D Institute India – Bangalore",
+      image: chinmayKulkarni,
       linkedin: "https://www.linkedin.com/in/chinmaypk15/"
     },
     {
       id: "iac-4",
       name: "Dhiraj Varma",
       designation: "Security Researcher",
-      institution: "Synack Red Team"
+      institution: "Synack Red Team",
+      image: dhirajVarma
     },
     {
       id: "iac-5",
       name: "Medha Deshpande",
       designation: "Director",
       institution: "MediAstra Technologies",
+      image: medhaDeshpande,
       linkedin: "https://www.linkedin.com/in/medha-deshpande-64362a25/"
     }
   ],
