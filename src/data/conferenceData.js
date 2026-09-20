@@ -19,6 +19,7 @@ import profVijayshriInjamuri from '../assets/images/committee/prof-vijayshri-a-i
 import profABChaudhari from '../assets/images/committee/prof-a-b-chaudhari.png';
 import drDRUike from '../assets/images/committee/dr-d-r-uike.png';
 import drManeshBKokare from '../assets/images/committee/dr-manesh-b-kokare.jpg';
+import drSanjeevJWagh from '../assets/images/committee/dr-sanjeev-j-wagh.png';
 import drGaneshPakle from '../assets/images/committee/dr-ganesh-pakle.png';
 import drPremchandAmbhore from '../assets/images/committee/dr-premchand-ambhore.png';
 import drAnjanaGhule from '../assets/images/committee/dr-anjana-ghule.png';
@@ -518,13 +519,20 @@ export const conferenceData = {
     },
     {
       id: "eac-3",
+      name: "Dr. Sanjeev J. Wagh",
+      designation: "Principal and Professor of IT",
+      institution: "Government College of Engineering, Karad",
+      image: drSanjeevJWagh
+    },
+    {
+      id: "eac-4",
       name: "Dr. Ganesh Pakle",
       designation: "Assistant Professor",
       institution: "SGGSIE&T, Nanded",
       image: drGaneshPakle
     },
     {
-      id: "eac-4",
+      id: "eac-5",
       name: "Dr. Prashant Pathak",
       designation: "Assistant Professor",
       department: "CSE",
@@ -532,7 +540,7 @@ export const conferenceData = {
       image: drPrashantPathak
     },
     {
-      id: "eac-5",
+      id: "eac-6",
       name: "Dr. Kailash D. Kharat",
       designation: "Associate Professor",
       institution: "CSMSS",
@@ -540,7 +548,7 @@ export const conferenceData = {
       image: drKailashDKharat
     },
     {
-      id: "eac-6",
+      id: "eac-7",
       name: "Dr. Sunil B. Mane",
       designation: "Associate Professor & Training and Placement Officer",
       department: "CSE",
@@ -548,7 +556,7 @@ export const conferenceData = {
       image: drSunilBMane
     },
     {
-      id: "eac-7",
+      id: "eac-8",
       name: "Dr. V. K. Haribhakta",
       designation: "Associate Professor, Vice President Boat Club",
       department: "CSE",
@@ -556,7 +564,7 @@ export const conferenceData = {
       image: drVKHaribhakta
     },
     {
-      id: "eac-8",
+      id: "eac-9",
       name: "Dr. Haridas D. Gadade",
       designation: "Assistant Professor",
       department: "CSE",
@@ -564,7 +572,7 @@ export const conferenceData = {
       image: drHaridasDGadade
     },
     {
-      id: "eac-9",
+      id: "eac-10",
       name: "Dr. Nitin Nandkumar Sakhare",
       designation: "Associate Professor",
       department: "CSE",
@@ -572,7 +580,7 @@ export const conferenceData = {
       image: drNitinNandkumarSakhare
     },
     {
-      id: "eac-10",
+      id: "eac-11",
       name: "Dr. Vijay Uttam Rathod",
       designation: "Assistant Professor",
       department: "CSE",
@@ -580,7 +588,7 @@ export const conferenceData = {
       image: drVijayUttamRathod
     },
     {
-      id: "eac-11",
+      id: "eac-12",
       name: "Prof. Sudhirkumar Shikalpure",
       designation: "Assistant Professor",
       department: "CSE",
@@ -588,21 +596,21 @@ export const conferenceData = {
       image: profSudhirkumarShikalpure
     },
     {
-      id: "eac-12",
+      id: "eac-13",
       name: "Dr. Anjana Ghule",
       designation: "Assistant Professor",
       department: "IT",
       image: drAnjanaGhule
     },
     {
-      id: "eac-13",
+      id: "eac-14",
       name: "Dr. Chitra Wagh",
       designation: "Assistant Professor",
       department: "IT",
       image: drChitraWagh
     },
     {
-      id: "eac-14",
+      id: "eac-15",
       name: "Dr. Premchand Ambhore",
       designation: "Assistant Professor",
       department: "IT",
@@ -610,7 +618,7 @@ export const conferenceData = {
       image: drPremchandAmbhore
     },
     {
-      id: "eac-15",
+      id: "eac-16",
       name: "Dr. Latesh Malik",
       designation: "Associate Professor & Head",
       department: "CSE",
@@ -618,7 +626,7 @@ export const conferenceData = {
       image: drLateshMalik
     },
     {
-      id: "eac-16",
+      id: "eac-17",
       name: "Dr. Prashant B. Jawade",
       designation: "Assistant Professor",
       department: "CSE",
