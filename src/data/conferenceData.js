@@ -39,6 +39,8 @@ import ashwinKulkarni from '../assets/images/committee/ashwin-kulkarni.png';
 import chinmayKulkarni from '../assets/images/committee/chinmay-kulkarni.png';
 import dhirajVarma from '../assets/images/committee/dhiraj-varma.png';
 import medhaDeshpande from '../assets/images/committee/medha-deshpande.png';
+import drVedPrakashMishra from '../assets/images/committee/dr-ved-prakash-mishra.png';
+import drMeghanaKshirsagar from '../assets/images/committee/dr-meghana-kshirsagar.png';
 
 // Vite eager glob to automatically map verified committee & patron photos when files are present
 const committeeImages = import.meta.glob('../assets/images/committee/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
@@ -622,6 +624,27 @@ export const conferenceData = {
       department: "CSE",
       location: "Nagpur",
       image: drPrashantBJawade
+    }
+  ],
+
+  // International Advisory Committee
+  internationalAdvisoryCommittee: [
+    {
+      id: "int-1",
+      name: "Dr. Meghana Kshirsagar",
+      designation: "Associate Professor in AI and ML",
+      institution: "University of Limerick",
+      country: "Ireland",
+      image: drMeghanaKshirsagar,
+      linkedin: "https://www.linkedin.com/school/166647/"
+    },
+    {
+      id: "int-2",
+      name: "Dr. Ved Prakash Mishra",
+      designation: "Associate Professor",
+      institution: "Amity University Dubai",
+      country: "UAE",
+      image: drVedPrakashMishra
     }
   ],
 
