@@ -15,6 +15,7 @@ import {
   Globe2
 } from 'lucide-react';
 import Hero from '../components/Hero';
+import IEEEsponsor from '../components/IEEEsponsor';
 import SectionTitle from '../components/SectionTitle';
 import TrackCard from '../components/TrackCard';
 import Timeline from '../components/Timeline';
@@ -28,6 +29,9 @@ export default function Home() {
     <div className="space-y-0">
       {/* Hero Section */}
       <Hero />
+
+      {/* IEEE Sponsor Section */}
+      <IEEEsponsor />
 
       {/* Core Conference Academic Highlights Bar */}
       <div className="bg-navy-900 border-b border-navy-800 text-white py-6">
