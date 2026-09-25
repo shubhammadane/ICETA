@@ -42,6 +42,13 @@ import dhirajVarma from '../assets/images/committee/dhiraj-varma.png';
 import medhaDeshpande from '../assets/images/committee/medha-deshpande.png';
 import drVedPrakashMishra from '../assets/images/committee/dr-ved-prakash-mishra.png';
 import drMeghanaKshirsagar from '../assets/images/committee/dr-meghana-kshirsagar.png';
+import drAbhilashaMishra from '../assets/images/committee/dr-abhilasha-mishra.png';
+import drRamchandraMangrulkar from '../assets/images/committee/dr-ramchandra-sharad-mangrulkar.png';
+import drKavitaSonawane from '../assets/images/committee/dr-kavita-vinay-sonawane.png';
+import drSudhirDhage from '../assets/images/committee/dr-sudhir-dhage.png';
+import drVijayRSonawane from '../assets/images/committee/dr-vijay-r-sonawane.jpg';
+import drSmitaNirkhi from '../assets/images/committee/dr-smita-nirkhi.png';
+import drAmolBhopale from '../assets/images/committee/dr-amol-bhopale.png';
 
 // Vite eager glob to automatically map verified committee & patron photos when files are present
 const committeeImages = import.meta.glob('../assets/images/committee/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
@@ -498,6 +505,72 @@ export const conferenceData = {
       qualification: "Ph. D. (Computer Science)",
       image: pardeshiPhoto,
       departmentFirst: true
+    }
+  ],
+
+  // IEEE Technical Committee
+  ieeeTechnicalCommittee: [
+    {
+      id: "itc-1",
+      name: "Dr. Abhilasha Mishra",
+      designation: "Professor",
+      department: "Department of Electronics and Computer Engineering",
+      institution: "Maharashtra Institute of Technology, Chhatrapati Sambhajinagar (CSN)",
+      email: "abhilasha.mishra@mit.asia",
+      image: drAbhilashaMishra
+    },
+    {
+      id: "itc-2",
+      name: "Dr. Ramchandra Sharad Mangrulkar",
+      designation: "Professor",
+      department: "Department of Information Technology",
+      institution: "SVKM's Dwarkadas J. Sanghvi College of Engineering, Mumbai-400046",
+      email: "ramchandra.mangrulkar@djsce.ac.in",
+      image: drRamchandraMangrulkar
+    },
+    {
+      id: "itc-3",
+      name: "Dr. Kavita Vinay Sonawane",
+      institution: "St. Francis Institute of Technology (Engineering College), University of Mumbai",
+      email: "kavitasonawane@sfit.ac.in",
+      image: drKavitaSonawane
+    },
+    {
+      id: "itc-4",
+      name: "Dr. Sudhir Dhage",
+      designation: "Professor and HOD",
+      department: "Computer Engineering",
+      institution: "SPIT Mumbai",
+      email: "sudhir_dhage@spit.ac.in",
+      image: drSudhirDhage
+    },
+    {
+      id: "itc-5",
+      name: "Dr. Vijay R Sonawane",
+      designation: "Associate Professor and HOD",
+      department: "Computer Engineering",
+      institution: "PVG College of Engineering, Nashik",
+      image: drVijayRSonawane
+    },
+    {
+      id: "itc-6",
+      name: "Dr. Smita Nirkhi",
+      designation: "Associate Professor",
+      department: "AI & Computer Science",
+      institution: "Symbiosis Institute of Technology, Nagpur",
+      description: "Researcher, Academic Leader",
+      additionalRole: "Researcher, Academic Leader",
+      email: "smita811@gmail.com",
+      image: drSmitaNirkhi
+    },
+    {
+      id: "itc-7",
+      name: "Dr. Amol Bhopale",
+      designation: "Assistant Professor",
+      department: "CSE",
+      institution: "IIIT Nagpur",
+      email: "abhopale@iiitn.ac.in",
+      image: drAmolBhopale
     }
   ],
 
